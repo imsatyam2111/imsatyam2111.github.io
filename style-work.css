@@ -1,0 +1,31 @@
+#project-work{
+    margin-top: 5px;
+    background: #eee;
+
+    width: 100%;
+    height: 70vh;
+
+}
+
+.project-h2{
+    font-family: "Courgette", cursive;
+    color: #0056a7;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding: 15px;
+    padding-top: 28px;;
+    display: block;
+} 
+.project-content{
+    margin-top: 55px;
+    font-size: 3rem;
+    text-align: center;
+}
+.project-content > p:last-child{
+    margin-left: 1vw;
+
+}
