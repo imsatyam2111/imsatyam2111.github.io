@@ -239,19 +239,22 @@ p {
     }
     
     .social-media{
+      
         margin-left: 25px;
         position: absolute;
         top: 385px;
         left: 8px;
     }
-    
     .social-media a img{
-      padding-right: 15px;
       width: 50px;
       display: inline;
+      margin-right: 0;
+      opacity: 0.6;
+      
     }
-    .social-media a > img:hover{
+    a > img:hover{
       transform: scale(1.2); 
+      opacity: 1;
     }
     
     
