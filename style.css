@@ -16,29 +16,29 @@ body{
 
 .banner{
 
-    background-image: url("DSC_2221-01.jpeg");
-    background-size: 2100px ;
+    background-image: url("DSC_2221.JPG");
+    
     
     height: 96.5vh;
   /* Create the parallax scrolling effect */
     background-attachment: fixed ;
     /*background-position: center;*/
     background-repeat: no-repeat;
+    background-size: 1600px;
     
 }
 
 .welcome-text h1{ 
-  
     font-family: "Courgette", cursive;
     color: #eee;
-    
+    position: relative;
+    top: 75vh;
+    left: 35vw;
     text-transform: capitalize;
     font-size:3em;
     word-spacing: 8px;
     font-weight: 100;
     text-shadow: 5px 10px 10px #111111;
-    padding-top: 20vh;
-    padding-left: 10vw;
     
     animation: -moz-fadeIn 2.5s ease-in-out;
     animation: -webkit-fadeIn 2.5s ease-in-out;
@@ -68,12 +68,6 @@ body{
     background-size: cover;
 }
 
-.animate-me{
-    animation: -moz-bounceIn 3s ease-in-out;
-    animation: -webkit-bounceIn 3s ease-in-out;
-    animation: -ms-bounceIn 3s ease-in-out;
-    animation: bounceIn 3s ease-in-out;
-}
 
 .about-me-header h2{
     font-family: "Courgette", cursive;
@@ -98,26 +92,39 @@ body{
   
 }
 
-#left-side{
-    font-size: 20px;
+.about-me-inDetail{
+  margin-top: 3.5%;
+  display: grid;
+  grid-template-columns: 20% 30% 50%;
+  grid-column-gap: auto;
+}
+
+#display-picture{
+  margin-top: 60px;
+  margin-left: 225px;
+  width: 130px;
+  border-radius: 50%;
+}
+
+#about-me-text{
+    font-size: 18px;
     color: #7a7a7a;
     font-family: 'verela round';
     
     background: rgba(148,250,250,.8) transparent;
     margin-left: 5vw;
-    text-align: justify;
-    line-height:2rem;
+    text-align: left;
+    line-height:1.8rem;
     border-radius: 45px;
 
 }
 
-#right-side{
+#about-me-skill{
     text-align: center;
-    height: 40vh;
-    
+    height: 40vh;  
 }
 
-.skill-text{
+#about-me-skill h2{
   font-family: 'Arial, Helvetica, sans-serif';
 }
 
@@ -125,14 +132,8 @@ body{
   margin: 10px;
 }
 
-.about-me-inDetail{
-    margin-top: 3.5%;
-    display: grid;
-    grid-template-columns: 50% 40%;
-    grid-column-gap: 1.8% ;
-}
 
-p {
+#about-me-text p{
     margin-top: 20px;
     padding: 10px;
     
@@ -184,176 +185,141 @@ p {
       width: 100%;
     }
     .banner{
-      background:url("DSC_2221-01.jpeg");
+      background:url("DSC_2221-01--2576847.jpeg");
       height: 50vh;
       background-repeat: no-repeat;
-      background-size: 450px;
+      background-size: 480px;
       background-position-y:20%;
       background-attachment: fixed;
     
     }
-    .banner{
-        display: flex;
-        flex-direction: row;
-        
-    }
-    .welcome-text h1{ 
-        margin-left: 5px;
-        position: absolute;
-        top: 110px;
-        left: -15px;
-        
-        font-family: "Courgette", cursive;
-        word-spacing: auto;
-        color: rgb(238,238,238);
-        
-        text-transform: capitalize;
-        font-size:22px;
+    
+    .welcome-text > h1{ 
+      position: absolute;
+      top: 290px;
+      left: 30px;
+      right: 30px;
+      font-family: "Courgette", cursive;
+      color: #eee;
+      text-transform: capitalize;
+      font-size:19.5px;
+      word-spacing: 3px;
+      line-height: 30px;
+      font-weight: 100;
+      text-shadow: 15px 15px 15px #111111;
 
-        text-shadow: 5px 10px 10px #111111;
-       
-        
-        animation: -moz-fadeIn 2.5s ease-in-out;
-        animation: -webkit-fadeIn 2.5s ease-in-out;
-        animation: -ms-fadeIn 2.5s ease-in-out;
-        animation: fadeIn 2.5s ease-in-out;
-        
-    }
-    
-    .social-media{
       
-        margin-left: 25px;
-        position: absolute;
-        top: 385px;
-        left: 8px;
-    }
-    .social-media a img{
-      width: 50px;
-      display: inline;
-      margin-right: 0;
-      opacity: 0.6;
+      animation: -moz-fadeIn 2.5s ease-in-out;
+      animation: -webkit-fadeIn 2.5s ease-in-out;
+      animation: -ms-fadeIn 2.5s ease-in-out;
+      animation: fadeIn 2.5s ease-in-out;
       
     }
-    a > img:hover{
-      transform: scale(1.2); 
-      opacity: 1;
-    }
-    
-    
-    
+
+
+
+
+
     /************************************************** 
-                        About me 
+                      About me 
     **************************************************/
     .mid-section{
-        margin-top: 0;
-        background-image: linear-gradient(320deg,#93a5cf,#e4efe9);
+      margin-top: 0;
+      background-image: linear-gradient(320deg,#93a5cf,#e4efe9);
     
-      /* Set a specific height */
-        height: 500px;
-    
-      /*Create the parallax scrolling effect */
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+      height: 1050px;
+
+    /*Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
+
     
-    .animate-me{
-        animation: -moz-bounceIn 3s ease-in-out;
-        animation: -webkit-bounceIn 3s ease-in-out;
-        animation: -ms-bounceIn 3s ease-in-out;
-        animation: bounceIn 3s ease-in-out;
-    }
-    
+
     .about-me-header h2{
-        font-family: "Courgette", cursive;
-        color: #0056a7;
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 2rem;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0;
-        padding: 15px;
-        display: block; 
-      
+      font-family: "Courgette", cursive;
+      color: #0056a7;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 2rem;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0;
+      padding: 15px;
+      display: block; 
+
     }
-      .text-line{
-        width: 6rem;
-        height: 0.6rem;
-        background: #f24971;
-        margin-top: 5px;
-        margin-left: auto;
-        margin-right: auto;
-      
+    .text-line{
+      width: 6rem;
+      height: 0.6rem;
+      background: #f24971;
+      margin-top: 5px;
+      margin-left: auto;
+      margin-right: auto;
+
     }
-    
-    #left-side{
-        font-size: 20px;
-        color: #7a7a7a;
-        font-family: 'verela round';
-        
-        background: rgba(148,250,250,.8) transparent;
-        margin-left: 5vw;
-        text-align: justify;
-        line-height:2rem;
-        border-radius: 45px;
-    
-    }
-    
-    #right-side{
-        text-align: center;
-        height: 40vh;
-        
-    }
-    
-    .skill-text{
-      font-family: 'Arial, Helvetica, sans-serif';
-    }
-    
-    .skill-img{
-      margin: 10px;
-    }
-    
+
     .about-me-inDetail{
-        margin-top: 3.5%;
-        display: grid;
-        grid-template-columns: 50% 40%;
-        grid-column-gap: 1.8% ;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: 10px;
+      justify-content: space-around;
     }
+
+    #display-picture{
+      width: 100px;
+      margin-bottom: 0;
+      margin-right: auto;
+      margin-left: auto;
     
+    }
+    #about-me-text{
+      
+      display: block;
+      font-size: 18px;
+      color: #7a7a7a;
+      font-family: 'verela round';
+      width: 100%;
+      background: rgba(148,250,250,.8) transparent;
+      margin-left: auto;
+      margin-right:auto;
+      margin-top: -22px;
+      text-align: left;
+      line-height:20px;
+      border-radius: 45px;
+
+    }
+
+    #about-me-skill{
+      margin-top: 20px;
+      display: block;
+      text-align: center;
+      
+    }
+
+    #about-me-skill h2{
+      font-size: 20px;
+      font-family: 'Arial, Helvetica, sans-serif';
+      text-transform:capitalize;
+    }
+
+    .skill-img{
+      width: 170px;
+      height: 110px;
+      margin: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+
     p {
-        margin-top: 20px;
-        padding: 10px;
-        
+      margin-top: 20px;
+      padding: 10px;
+      
     }
-    
-    
-    
-    /************************************************** 
-                  Animating Welcome text
-    **************************************************/
-    
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
-    }
-    
-    @keyframes bounceIn {
-      0% {
-        transform: scale(0.1);
-        opacity: 0;
-      }
-      60% {
-        transform: scale(1.2);
-        opacity: 1;
-      }
-      100% {
-        transform: scale(1);
-      }
-    }
+
 }
