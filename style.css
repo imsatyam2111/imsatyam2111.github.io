@@ -246,8 +246,8 @@ p {
     }
     
     .social-media a img{
-      padding-right: 85px;
-      width: 112px;
+      padding-right: 15px;
+      width: 50px;
       display: inline;
     }
     .social-media a > img:hover{
