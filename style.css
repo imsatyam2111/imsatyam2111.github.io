@@ -26,12 +26,7 @@ body{
     background-repeat: no-repeat;
     
 }
-.banner{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-top: 20vh;
-}
+
 .welcome-text h1{ 
   
     font-family: "Courgette", cursive;
@@ -52,20 +47,7 @@ body{
     
 }
 
-.social-media{
-  margin-top: 0;
-  margin-left: 43vw;
-}
-.social-media a img{
-  width: 70px;
-  display: block;
-  margin-bottom: 15vh;
-  padding-left: 8px;
-  padding-right: 8px;
-}
-.social-media a > img:hover{
- transform: scale(1.2); 
-}
+
 
 
 
@@ -203,10 +185,10 @@ p {
     }
     .banner{
       background:url("DSC_2221-01.jpeg");
-      height: 60vh;
+      height: 50vh;
       background-repeat: no-repeat;
-      background-size: 350px;
-      background-position-y:70px;
+      background-size: 450px;
+      background-position-y:20%;
       background-attachment: fixed;
     
     }
