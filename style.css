@@ -10,17 +10,21 @@ body{
    
 }
 
+/************************************************** 
+                    Header Section
+**************************************************/
+
 .banner{
 
     background-image: url("DSC_2221-01.jpeg");
-    background-size: 2100px !important;
+    background-size: 2100px ;
     
     height: 96.5vh;
   /* Create the parallax scrolling effect */
-    background-attachment: fixed;
+    background-attachment: fixed ;
     /*background-position: center;*/
     background-repeat: no-repeat;
-    background-size: cover;
+    
 }
 .banner{
     display: flex;
@@ -52,9 +56,6 @@ body{
   margin-top: 0;
   margin-left: 43vw;
 }
-.social-media a{
-  background: red;
-}
 .social-media a img{
 
   display: block;
@@ -68,7 +69,9 @@ body{
 
 
 
-
+/************************************************** 
+                    About me 
+**************************************************/
 .mid-section{
     margin-top: 0;
     background-image: linear-gradient(320deg,#93a5cf,#e4efe9);
@@ -130,11 +133,12 @@ body{
     text-align: center;
     height: 40vh;
     
-   /* margin-left: 14vw;*/
 }
+
 .skill-text{
   font-family: 'Arial, Helvetica, sans-serif';
 }
+
 .skill-img{
   margin: 10px;
 }
@@ -154,20 +158,9 @@ p {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/************************************************** 
+              Animating Welcome text
+**************************************************/
 
 @keyframes fadeIn {
   from {
@@ -190,4 +183,192 @@ p {
   100% {
     transform: scale(1);
   }
+}
+
+
+
+
+
+/****************************************************
+      Writing Media Query to make it responsive
+****************************************************/
+
+@media screen and (max-width:480px) {
+ 
+    /************************************************** 
+                        Header Section
+    **************************************************/
+    body{
+      width: 100%;
+    }
+    .banner{
+      background:url("DSC_2221-01.jpeg");
+      height: 60vh;
+      background-repeat: no-repeat;
+      background-size: 550px;
+      background-position-y:70px;
+      background-attachment: fixed;
+    
+    }
+    .banner{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .welcome-text h1{ 
+        margin-left: 5px;
+        position: absolute;
+        top: 110px;
+        left: -15px;
+        
+        font-family: "Courgette", cursive;
+        word-spacing: auto;
+        color: rgb(238,238,238);
+        
+        text-transform: capitalize;
+        font-size:22px;
+
+        text-shadow: 5px 10px 10px #111111;
+       
+        
+        animation: -moz-fadeIn 2.5s ease-in-out;
+        animation: -webkit-fadeIn 2.5s ease-in-out;
+        animation: -ms-fadeIn 2.5s ease-in-out;
+        animation: fadeIn 2.5s ease-in-out;
+        
+    }
+    
+    .social-media{
+        margin-left: 25px;
+        position: absolute;
+        top: 385px;
+        left: 8px;
+    }
+    
+    .social-media a img{
+      padding-right: 85px;
+      width: 112px;
+      display: inline;
+    }
+    .social-media a > img:hover{
+      transform: scale(1.2); 
+    }
+    
+    
+    
+    /************************************************** 
+                        About me 
+    **************************************************/
+    .mid-section{
+        margin-top: 0;
+        background-image: linear-gradient(320deg,#93a5cf,#e4efe9);
+    
+      /* Set a specific height */
+        height: 500px;
+    
+      /*Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .animate-me{
+        animation: -moz-bounceIn 3s ease-in-out;
+        animation: -webkit-bounceIn 3s ease-in-out;
+        animation: -ms-bounceIn 3s ease-in-out;
+        animation: bounceIn 3s ease-in-out;
+    }
+    
+    .about-me-header h2{
+        font-family: "Courgette", cursive;
+        color: #0056a7;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        padding: 15px;
+        display: block; 
+      
+    }
+      .text-line{
+        width: 6rem;
+        height: 0.6rem;
+        background: #f24971;
+        margin-top: 5px;
+        margin-left: auto;
+        margin-right: auto;
+      
+    }
+    
+    #left-side{
+        font-size: 20px;
+        color: #7a7a7a;
+        font-family: 'verela round';
+        
+        background: rgba(148,250,250,.8) transparent;
+        margin-left: 5vw;
+        text-align: justify;
+        line-height:2rem;
+        border-radius: 45px;
+    
+    }
+    
+    #right-side{
+        text-align: center;
+        height: 40vh;
+        
+    }
+    
+    .skill-text{
+      font-family: 'Arial, Helvetica, sans-serif';
+    }
+    
+    .skill-img{
+      margin: 10px;
+    }
+    
+    .about-me-inDetail{
+        margin-top: 3.5%;
+        display: grid;
+        grid-template-columns: 50% 40%;
+        grid-column-gap: 1.8% ;
+    }
+    
+    p {
+        margin-top: 20px;
+        padding: 10px;
+        
+    }
+    
+    
+    
+    /************************************************** 
+                  Animating Welcome text
+    **************************************************/
+    
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    
+    @keyframes bounceIn {
+      0% {
+        transform: scale(0.1);
+        opacity: 0;
+      }
+      60% {
+        transform: scale(1.2);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
 }
