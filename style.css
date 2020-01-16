@@ -57,7 +57,7 @@ body{
   margin-left: 43vw;
 }
 .social-media a img{
-
+  width: 70px;
   display: block;
   margin-bottom: 15vh;
   padding-left: 8px;
