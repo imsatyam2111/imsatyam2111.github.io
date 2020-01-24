@@ -18,7 +18,7 @@ body{
     position: relative;
     top:0;
     left:0;
-    background: url("banner_1440.JPG");
+    background: url("imgs/DSC_2221-01.jpeg");
     
     width: 100%;
     height: 100vh;
@@ -195,7 +195,7 @@ body{
       width: 100%;
     }
     .banner{
-      background:url("DSC_2221-01--2576847.jpeg");
+      background:url("icons/DSC_2221-01--2576847.jpeg");
       height: 50vh;
       background-repeat: no-repeat;
       background-size: 430px;
@@ -359,7 +359,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background:url("DSC_2221-01--2576847.jpeg");
+    background:url("icons/DSC_2221-01--2576847.jpeg");
     height: 50vh;
     background-repeat: no-repeat;
     /*background-size: 654px;

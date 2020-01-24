@@ -1,0 +1,115 @@
+nav a, ul a{
+    color: #000;
+}
+.nav-bar{
+    background:#fff;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+
+}
+
+.nav-bar ul{
+    margin: o;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+.nav-bar ul a{
+    display: block;
+    padding: 20px; 
+    text-decoration: none;
+}
+.nav-bar ul a:hover{
+    background-color:#aaa;
+
+}
+
+.nav-bar .logo{
+    float: left;
+    display: block;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.nav-bar .menu{
+    clear: both;
+    max-height: 0;
+    transition:max-height .2s ease-out;
+}
+
+.nav-bar .menu-icon{
+    padding: 25px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+.nav-bar .menu-icon .nav-icon{
+    background-color: #ddd;
+    display: block;
+    height: 2px;
+    width: 17px;
+    position:relative;
+    transition: background .2s ease-out;
+}
+
+.nav-bar .menu-icon .nav-icon:before{
+    background-color: #ddd;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: 5px;
+}
+.nav-bar .menu-icon .nav-icon::after{
+    background-color: #ddd;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: -5px;
+}
+
+.nav-bar .menu-btn{
+    display: none;
+}
+
+
+.nav-bar .menu-btn:checked ~ .menu{
+    max-height: 240px;
+}
+
+.nav-bar  .menu-btn:checked ~ .menu-icon .nav-icon{
+    background: transparent; 
+}
+.nav-bar .menu-btn:checked ~ .menu-icon .nav-icon:before{
+    transform: rotate(-45deg);
+    top: 0;
+}
+.nav-bar .menu-btn:checked ~ .menu-icon .nav-icon:after{
+    transform: rotate(45deg);
+    top: 0;
+}
+
+@media (min-width: 48em){
+
+    .nav-bar li{
+        float: left;
+    }
+    .nav-bar li a{
+        padding: 20px 25px;
+    }
+    .nav-bar .menu{
+        clear: none;
+        float: right;
+    }
+    .nav-bar .menu-icon{
+        display: none;
+    }
+}
