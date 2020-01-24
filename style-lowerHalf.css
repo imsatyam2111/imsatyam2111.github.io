@@ -38,6 +38,8 @@
 .contact-mode p{
     text-align: center;
     margin-left: -50px;
+    margin-top: 20px;
+    padding: 10px;
 }
 .section-content > div > p{
     margin-left: -4rem;
@@ -94,18 +96,15 @@ footer a:hover{
       Writing Media Query to make it responsive
 ****************************************************/
 
-@media screen and (max-width:480px) {
+@media (min-width: 320px) and (max-width:480px) {
     
 #contact-me{
     margin-top: 5px;
-    height: 830px;
+    height: auto;
     background: rgb(221, 221, 221);
-
-    /* for creating Parallax Effect */
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center; 
+    
     color: white;
+    text-align: center;
 }
 
 .section-header h2{
@@ -125,31 +124,35 @@ footer a:hover{
 .section-content{
     margin-top: 30px;
     color: #000;
-    display: flex;
-    flex-direction: row;
-    flex-wrap:wrap;
+    display: block;
+    text-align: center;
     
 }
 .contact-mode{
     display: block;
     margin-top: 3rem;
     font-size: 1.25rem;
-    margin-left: 100px;
+    /*margin-left: 100px;*/
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 .contact-mode p{
     text-align: center;
-    margin-left: 500px;
+    margin-left: auto !important;
+    margin-right: auto !important;
     font-size: 14px;
 }
+/*
 .section-content > div > p{
     margin-left: -30px;
 }
  .section-content > div:nth-child(2) > p{
-     margin-left: -20px;
+    margin-left: -20px;
  }
  .section-content > div:nth-child(3) > p{
-    margin-left: -50px;
-}
+     margin-left: -50px;
+}*/
 
 footer{
     display: flex;
@@ -161,6 +164,7 @@ footer{
     color: #eee;
     padding: 20px;
     height: 12vh;
+    text-align: center;
 }
 .copyright{
     font-size: 0.8rem;

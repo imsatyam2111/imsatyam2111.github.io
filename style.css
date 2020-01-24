@@ -15,25 +15,33 @@ body{
 **************************************************/
 
 .banner{
-
-    background-image: url("DSC_2221.JPG");
+    position: relative;
+    top:0;
+    left:0;
+    background: url("banner_1440.JPG");
     
-    
-    height: 96.5vh;
+    width: 100%;
+    height: 100vh;
   /* Create the parallax scrolling effect */
-    background-attachment: fixed ;
-    /*background-position: center;*/
+   background-attachment: fixed ;
     background-repeat: no-repeat;
-    background-size: 1600px;
+    background-size: cover;
+
     
 }
+.welcome-text{
+  width: 100%;
+  position: absolute;   
+  top: 50%;
+  left: 0;
+  text-align: center;
+  display: block;
+  font-family: "Courgette", cursive;
+  color: #eee; 
+}
 
-.welcome-text h1{ 
-    font-family: "Courgette", cursive;
-    color: #eee;
-    position: relative;
-    top: 75vh;
-    left: 35vw;
+.welcome-text > h1{ 
+
     text-transform: capitalize;
     font-size:3em;
     word-spacing: 8px;
@@ -55,7 +63,7 @@ body{
                     About me 
 **************************************************/
 .mid-section{
-    margin-top: 0;
+    /*margin-top: 0;*/
     background-image: linear-gradient(320deg,#93a5cf,#e4efe9);
 
   /* Set a specific height */
@@ -118,6 +126,10 @@ body{
     border-radius: 45px;
 
 }
+#about-me-text p{
+  margin-top: 20px;
+  padding: 10px;
+}
 
 #about-me-skill{
     text-align: center;
@@ -133,17 +145,12 @@ body{
 }
 
 
-#about-me-text p{
-    margin-top: 20px;
-    padding: 10px;
-    
-}
+  
 
 
 
-/************************************************** 
-              Animating Welcome text
-**************************************************/
+
+  /* Animating Welcome text */
 
 @keyframes fadeIn {
   from {
@@ -176,7 +183,10 @@ body{
       Writing Media Query to make it responsive
 ****************************************************/
 
-@media screen and (max-width:480px) {
+
+/* For mobiles with smalller screen width */
+
+@media (min-width: 320px) and (max-width:480px) {
  
     /************************************************** 
                         Header Section
@@ -188,21 +198,29 @@ body{
       background:url("DSC_2221-01--2576847.jpeg");
       height: 50vh;
       background-repeat: no-repeat;
-      background-size: 480px;
+      background-size: 430px;
       background-position-y:20%;
       background-attachment: fixed;
     
     }
-    
-    .welcome-text > h1{ 
+    .welcome-text{
+      width: 100%;
       position: absolute;
-      top: 290px;
-      left: 30px;
-      right: 30px;
+      top: 70%;
+      left: 0;
+      display: block;
       font-family: "Courgette", cursive;
       color: #eee;
+    }
+    .welcome-text > h1{ 
+      /*position: static;
+      padding-top: 130px;
+      padding-left: 10px;
+      width: 80px;
+      height: 200px;*/
+      
       text-transform: capitalize;
-      font-size:19.5px;
+      font-size:20px;
       word-spacing: 3px;
       line-height: 30px;
       font-weight: 100;
@@ -293,6 +311,12 @@ body{
 
     }
 
+    #about-me-text > p {
+      margin-top: 20px;
+      padding: 10px;
+      
+    }
+
     #about-me-skill{
       margin-top: 20px;
       display: block;
@@ -316,10 +340,158 @@ body{
     }
 
 
-    p {
-      margin-top: 20px;
-      padding: 10px;
-      
-    }
+}
+
+/* For devices of screen width more than 360 pixels */
+
+@media screen and (min-width:400px) and (max-width: 720px) {
+ 
+  
+  body{
+    width: 100%;
+  }
+
+  /* Header Section */
+
+  .banner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:url("DSC_2221-01--2576847.jpeg");
+    height: 50vh;
+    background-repeat: no-repeat;
+    /*background-size: 654px;
+    background-position-y:20%;*/
+   /* background-attachment: fixed;*/
+  
+  }
+  
+  .welcome-text > h1{ 
+    /*position: static;
+    padding-top: 295px;
+    padding-left: 28px;*/
+    position: absolute;
+    top: 50%;
+    left: 0;
+    text-align: center;
+    font-family: "Courgette", cursive;
+    color: #eee;
+    text-transform: capitalize;
+    font-size:22px;
+    word-spacing: 3px;
+    line-height: 25px;
+    font-weight: 100;
+    text-shadow: 15px 15px 15px #111111;
+
+    
+    animation: -moz-fadeIn 2.5s ease-in-out;
+    animation: -webkit-fadeIn 2.5s ease-in-out;
+    animation: -ms-fadeIn 2.5s ease-in-out;
+    animation: fadeIn 2.5s ease-in-out;
+    
+  }
+
+  /* About me */
+  
+  .mid-section{
+    margin-top: 0;
+    background-image: linear-gradient(320deg,#93a5cf,#e4efe9);
+  
+    height: 750px;
+
+  /*Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  
+
+  .about-me-header h2{
+    font-family: "Courgette", cursive;
+    color: #0056a7;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    padding: 15px;
+    display: block; 
+
+  }
+  .text-line{
+    width: 6rem;
+    height: 0.6rem;
+    background: #f24971;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  /* About me text */
+
+  .about-me-inDetail{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    justify-content: space-around;
+  }
+
+  #display-picture{
+    width: 100px;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+  
+  }
+  #about-me-text{
+    
+    display: block;
+    font-size: 18px;
+    color: #7a7a7a;
+    font-family: 'verela round';
+    width: 100%;
+    background: rgba(148,250,250,.8) transparent;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: -22px;
+    text-align: left;
+    line-height:20px;
+    border-radius: 45px;
+
+  }
+  #about-me-text > p {
+    margin-top: 20px;
+    padding: 10px;
+    
+  }
+
+  /* Skill Details */
+  #about-me-skill{
+    margin-top: 20px;
+    text-align: center;
+    
+  }
+
+  #about-me-skill h2{
+    font-size: 20px;
+    font-family: 'Arial, Helvetica, sans-serif';
+    text-transform:capitalize;
+  }
+
+  .skill-img{
+    width: 140px;
+    margin: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    display: inline-block;
+  }
 
 }
