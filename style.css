@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
    background-color: rgba(0, 0, 0, 0.233);
    font-family: Arial, Helvetica, sans-serif;
@@ -19,17 +20,15 @@ body{
     top:0;
     left:0;
     background: url("imgs/DSC_2221-01.jpeg");
-    hello
     
     width: 100%;
     height: 100vh;
   /* Create the parallax scrolling effect */
    background-attachment: fixed ;
     background-repeat: no-repeat;
-    background-size: cover;
-
-    
+    background-size: cover;   
 }
+
 .welcome-text{
   width: 100%;
   position: absolute;   
@@ -55,8 +54,6 @@ body{
     animation: fadeIn 2.5s ease-in-out;
     
 }
-
-
 
 
 
@@ -91,6 +88,7 @@ body{
     display: block; 
   
 }
+
  .text-line{
     width: 6rem;
     height: 0.6rem;
@@ -125,8 +123,8 @@ body{
     text-align: left;
     line-height:1.8rem;
     border-radius: 45px;
-
 }
+
 #about-me-text p{
   margin-top: 20px;
   padding: 10px;
@@ -195,6 +193,7 @@ body{
     body{
       width: 100%;
     }
+
     .banner{
       background:url("icons/DSC_2221-01--2576847.jpeg");
       height: 50vh;
@@ -204,6 +203,7 @@ body{
       background-attachment: fixed;
     
     }
+
     .welcome-text{
       width: 100%;
       position: absolute;
@@ -213,12 +213,8 @@ body{
       font-family: "Courgette", cursive;
       color: #eee;
     }
+
     .welcome-text > h1{ 
-      /*position: static;
-      padding-top: 130px;
-      padding-left: 10px;
-      width: 80px;
-      height: 200px;*/
       
       text-transform: capitalize;
       font-size:20px;
@@ -270,6 +266,7 @@ body{
       display: block; 
 
     }
+
     .text-line{
       width: 6rem;
       height: 0.6rem;
@@ -295,6 +292,7 @@ body{
       margin-left: auto;
     
     }
+
     #about-me-text{
       
       display: block;
@@ -424,6 +422,7 @@ body{
     display: block; 
 
   }
+
   .text-line{
     width: 6rem;
     height: 0.6rem;
@@ -451,6 +450,7 @@ body{
     margin-left: auto;
   
   }
+
   #about-me-text{
     
     display: block;
@@ -467,6 +467,7 @@ body{
     border-radius: 45px;
 
   }
+  
   #about-me-text > p {
     margin-top: 20px;
     padding: 10px;
