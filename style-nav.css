@@ -1,8 +1,8 @@
 nav a, ul a{
-    color: #000;
+    color: #fff !important;
 }
 .nav-bar{
-    background:#fff;
+    background: #000000ce;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
     position: fixed;
     width: 100%;
@@ -22,8 +22,7 @@ nav a, ul a{
     text-decoration: none;
 }
 .nav-bar ul a:hover{
-    background-color:#aaa;
-
+    background-color:rgba(170, 170, 170, 0.26);
 }
 
 .nav-bar .logo{
@@ -108,6 +107,7 @@ nav a, ul a{
     .nav-bar .menu{
         clear: none;
         float: right;
+        max-height: none;
     }
     .nav-bar .menu-icon{
         display: none;
